@@ -1,0 +1,43 @@
+/*ウィジェッド上部下部*/
+/*==置き換え4 ここから==*/
+.widgetHead{
+	width:100%;
+	margin-bottom:20px;
+&p{
+	width:100%;
+	text-align: center;
+	color:#0F3F6E;
+	font-size: 25px;
+	line-height: 1.5;
+}
+}
+/*==置き換え4 ここまで==*/
+
+.widgetBottom{
+	font-size:20px;
+	color:#0F3F6E;
+	width:100%;
+	text-align:center;
+&p{
+	display:inline-block;
+	border-bottom: 1px dotted #0F3F6E;
+	width:auto !important;
+}
+}
+
+.widget h2{
+	font-size: 2.2rem;
+	padding:20px;
+}
+
+aside.widget{
+	h2.heading-widgetbottom{
+	padding:20px 0;
+}
+	ol.widgetArchive li.widgetArchive__item{
+	margin-right:0;
+	margin-left:0;
+	width: 49%;
+  margin-bottom: 20px;	
+}
+}

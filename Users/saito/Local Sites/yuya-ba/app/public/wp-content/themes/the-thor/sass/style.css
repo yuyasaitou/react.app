@@ -1,0 +1,1145 @@
+@charset "UTF-8";
+/*共通*/
+.deleteThis {
+  display: none !important;
+}
+
+body {
+  background: #ffffff !important;
+}
+
+nav.global-menu ul {
+  background: none;
+  color: #0F3F6E;
+}
+
+@media only screen and (min-width: 768px) {
+  div.menuBtn {
+    display: none;
+  }
+}
+
+/*ヘッダー*/
+h1.siteTitle {
+  text-align: center;
+  max-width: 100%;
+}
+
+p.siteTitle {
+  text-align: center;
+  max-width: 100%;
+}
+
+/*==置き換え1 ここから==*/
+@media only screen and (min-width: 992px) {
+  h1.siteTitle {
+    text-align: center;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  p.siteTitle {
+    text-align: center;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+/*==置き換え1 ここまで==*/
+/*==New CSS Second ここから==*/
+.l-header-border {
+  border-bottom: none;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 864px) {
+  .l-header {
+    padding-top: 0;
+  }
+  h1.siteTitle img {
+    height: 70px !important;
+  }
+}
+
+/*==タブボックス 用CSS==*/
+.tabContainer00 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/*タブ横丸表示*/
+input[name="tabItem00"] {
+  display: none;
+}
+
+/*タブ下表示*/
+#tab001:checked ~ #tab001Content,
+#tab002:checked ~ #tab002Content {
+  display: block;
+}
+
+.tabItem00 {
+  background-color: #f4f7ff;
+  border: 1px solid  #395168;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+  color: #103f6f;
+  position: relative;
+  bottom: 16px;
+}
+
+#tab001:checked ~ .tablabelL,
+#tab002:checked ~ .tablabelR {
+  background-color: #ffffff;
+}
+
+.tabContent {
+  font-weight: bold;
+  display: none;
+}
+
+/*タブ上ボーダー前面色*/
+.tabContainer00 input:checked + .tabItem00 {
+  border-bottom: 1px solid #ffffff;
+}
+
+/*タブ下パーツ*/
+.tabContent {
+  background-color: white;
+  border: 1px solid #103f6f;
+}
+
+.tabContent p a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #103f6f;
+}
+
+/*--------------------------------pc表示----------------------------------*/
+/*==置き換え2 ここから==*/
+@media (min-width: 768px) {
+  /*タブ上パーツ*/
+  .tabItem00 {
+    padding: 1em 2em;
+  }
+  /*タブ下パーツ*/
+  .tabContent {
+    border-radius: 10px 10px;
+    /*サイズ切り替え(pc2パターンスマホ1パターン)*/
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 1em 3em 3em;
+  }
+  .tabContentDescription {
+    text-align: center;
+  }
+  /*スマホ表示で修正*/
+  .tabContent .tabFlex {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tabContent p {
+    border-bottom: 1px dashed black;
+    width: 42%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 5%;
+    text-align: left;
+  }
+  .tabContent p i {
+    display: none;
+  }
+  .tabContent p a {
+    color: #000000;
+  }
+}
+
+/*==置き換え2 ここまで==*/
+/*width:750px;以下はスマホ表示で作成*/
+/*==置き換え3 ここから==*/
+@media (max-width: 768px) {
+  .tabContent {
+    width: 90%;
+    margin-left: 5%;
+  }
+  /*タブ上パーツ*/
+  .tabItem00 {
+    padding: 1em 10px;
+    font-size: 14px;
+    bottom: 15px;
+  }
+  /*タブ下パーツ*/
+  .tabContent {
+    padding: 1em 3em 3em;
+    border-radius: 10px 10px;
+  }
+  .tabContentDescription {
+    text-align: left;
+  }
+  /*スマホ表示で修正*/
+  .tabContent .tabFlex {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tabContent p {
+    position: relative;
+    font-size: 18px;
+    border-bottom: 1px solid #103f6f;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+    padding-right: 25px;
+  }
+  .tabContent p i {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0;
+    border-radius: 50%;
+    bottom: 5px;
+    padding-top: 3px;
+    padding-left: 7px;
+    color: #ffffff;
+    background-color: #0F3F6E;
+  }
+  .tabContent p a span {
+    display: none;
+  }
+  .tabContainer00 input:checked + .tabItem00:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 32px;
+    width: 9em;
+    /*線の長さ*/
+    height: 5px;
+    /*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    /*位置調整*/
+    background-color: #faf75d;
+    /*線の色*/
+    border-radius: 2px;
+    /*線の丸み*/
+  }
+}
+
+/*==置き換え3 ここから==*/
+@media only screen and (max-width: 400px) {
+  .tabItem00 {
+    padding: 1em 10px;
+    font-size: 12px;
+    bottom: 12px;
+  }
+}
+
+/*==タブボックス 終わり==*/
+/*==blogcard記事一覧==*/
+article.archive__item div.archive__contents h2.heading {
+  margin-bottom: 0;
+}
+
+article.archive__item div.archive__contents h2.headingp.phrase {
+  display: none !important;
+}
+
+article.archive__item {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+article.archive__item:hover {
+  -webkit-box-shadow: 0px 5px 5px #aaa;
+          box-shadow: 0px 5px 5px #aaa;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/*==スライダーボタン==*/
+.swiper-slide .swiper-content {
+  position: relative;
+  margin-top: -30%;
+  height: 90%;
+  width: 90%;
+}
+
+.l-headerBottom .swiper-content .btn {
+  background: none !important;
+  height: 100%;
+  width: 100%;
+}
+
+.l-headerBottom .swiper-content .btn a {
+  height: 100%;
+  width: 100%;
+  background: none !important;
+  border: none;
+  font-size: 13px;
+}
+
+.content {
+  font-size: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .swiper-slide .swiper-content {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .swiper-slide .swiper-content {
+    margin-top: -10%;
+    position: relative;
+    height: 416px;
+    width: 886px;
+  }
+}
+
+/*==/スライダーボタン==*/
+/*スライドショー*/
+div.swiper-slide img {
+  margin-top: 10px;
+  height: 80%  !important;
+  width: auto  !important;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 900px) {
+  div.swiper-slide img {
+    height: auto !important;
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  div.swiper-slide img {
+    height: 80%  !important;
+    width: auto  !important;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FCED4F !important;
+}
+
+.swiper-pagination-bullet {
+  background: #F4F7FE;
+  opacity: 1;
+  border: 1px solid #0F3F6E !important;
+}
+
+div.swiper-button-prev {
+  display: none !important;
+}
+
+div.swiper-button-next {
+  display: none !important;
+}
+
+.ViewSp {
+  display: none !important;
+}
+
+.ViewPc {
+  display: block !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .ViewSp {
+    display: block !important;
+  }
+  .ViewPc {
+    display: none !important;
+  }
+}
+
+/*ウィジェッド上部下部*/
+/*==置き換え4 ここから==*/
+.widgetHead {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.widgetHeadp {
+  width: 100%;
+  text-align: center;
+  color: #0F3F6E;
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+/*==置き換え4 ここまで==*/
+.widgetBottom {
+  font-size: 20px;
+  color: #0F3F6E;
+  width: 100%;
+  text-align: center;
+}
+
+.widgetBottomp {
+  display: inline-block;
+  border-bottom: 1px dotted #0F3F6E;
+  width: auto !important;
+}
+
+.widget h2 {
+  font-size: 2.2rem;
+  padding: 20px;
+}
+
+aside.widget h2.heading-widgetbottom {
+  padding: 20px 0;
+}
+
+aside.widget ol.widgetArchive li.widgetArchive__item {
+  margin-right: 0;
+  margin-left: 0;
+  width: 49%;
+  margin-bottom: 20px;
+}
+
+/*フッター設定*/
+.bottomFooter {
+  padding-top: 20px;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottomFooter {
+  background-color: #ffffff;
+}
+
+.bottomFooter.top {
+  padding-bottom: 10px;
+}
+
+/*フッター設定*/
+.bottomFooter {
+  background-color: #F4EFEF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0;
+}
+
+.bottomFooter.top {
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.bottomFooter__copyright {
+  color: #000000;
+  font-size: 12px;
+}
+
+.bottomFooter__link {
+  color: blue;
+}
+
+.bottomFooter__navi {
+  overflow: hidden;
+  text-align: center;
+}
+
+.bottomFooter__navi li {
+  color: #000000;
+  list-style: none;
+  padding-right: 5rem;
+  float: left;
+  text-transform: uppercase;
+  margin: 1rem;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 768px) {
+  .bottomFooter {
+    display: block;
+  }
+  .bottomFooter.top {
+    margin-bottom: -20px;
+  }
+  .bottomFooter li {
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+    border-bottom: solid  0.5px #000000;
+    font-size: 12px;
+  }
+}
+
+/*ナビゲーション*/
+.global-menu ul {
+  background-color: #ffffff;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+  margin-top: 10px;
+  color: #103f6f;
+}
+
+.global-menu li {
+  width: 100%;
+  margin: 0 10px;
+  display: inline;
+}
+
+.l-header-border {
+  background-color: white;
+}
+
+/*ナビゲーションフォント可変設定ーパソコン表示サイズ*/
+@media only screen and (min-width: 1039px) {
+  .global-menu ul {
+    font-size: 18px;
+  }
+}
+
+/*ナビゲーションデザイン*/
+/*PC用*/
+@media only screen and (min-width: 768px) {
+  .global-menu li a:after {
+    content: '|';
+    font-size: 30px;
+    text-decoration: none;
+    padding-left: 20px;
+    color: #707070;
+  }
+  .global-menu ul:first-child:before {
+    font-family: FontAwesome;
+    content: '|';
+    color: #707070;
+    padding-right: 5px;
+    font-size: 30px;
+  }
+  .global-menu li:nth-child(1):before {
+    content: '';
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/about.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 10px;
+    right: 3px;
+  }
+  .global-menu li:nth-child(2):before {
+    content: '';
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/useful.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 10px;
+    right: 3px;
+  }
+  .global-menu li:nth-child(3):before {
+    content: '';
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/health.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 10px;
+    right: 3px;
+  }
+  .global-menu li:nth-child(4):before {
+    content: '';
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/doctor.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 10px;
+    right: 3px;
+  }
+}
+
+/*なぜかwidth 768px以下（スマホ,タブレット版）のみ適用されてる*/
+p {
+  line-height: 2;
+}
+
+@media only screen and (max-width: 767px) {
+  .global-menu {
+    display: none;
+  }
+}
+
+/*　PCでハンバーガー非表示　*/
+@media only screen and (min-width: 941px) {
+  .menuBtn__link {
+    display: none;
+  }
+}
+
+/*　ハンバーガーの色　*/
+.menuBtn__scroll {
+  background-color: #044e83;
+}
+
+.menuBtn__close {
+  color: #fff;
+}
+
+/*ハンバーガー周り終了*/
+/*　固定フッター(スマホ)　*/
+/*スマホ固定フッタ*/
+@media (max-width: 390px) {
+  .iconNeo0 {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+  }
+  .iconNeo0:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/about.png");
+    background-size: contain;
+    position: absolute;
+    left: 15px;
+  }
+  .iconNeo1 {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+  }
+  .iconNeo1:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/useful.png");
+    background-size: contain;
+    position: absolute;
+    left: 15px;
+  }
+  .iconNeo2 {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+  }
+  .iconNeo2:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/health.png");
+    background-size: contain;
+    position: absolute;
+    left: 15px;
+  }
+  .iconNeo3 {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+  }
+  .iconNeo3:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/doctor.png");
+    background-size: contain;
+    position: absolute;
+    left: 15px;
+  }
+  .controllerFooter ul {
+    background-color: #103f6f;
+  }
+  .controllerFooter a {
+    color: #fff;
+  }
+  .controllerFooter li:nth-child(5) {
+    background: #103f6f;
+  }
+  .controllerFooter li:nth-child(5) a {
+    padding: 10px;
+  }
+  .bottomFooter__topBtn {
+    display: none !important;
+  }
+}
+
+/*　固定フッター(スマホ)　*/
+/*スマホ固定フッタ終了*/
+/*固定フッタスマホ外*/
+@media (min-width: 391px) {
+  .iconNeo0 {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+  }
+  .iconNeo0:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/about.png");
+    background-size: contain;
+    position: absolute;
+    left: 1em;
+  }
+  .iconNeo1 {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+  }
+  .iconNeo1:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/useful.png");
+    background-size: contain;
+    position: absolute;
+    left: 1em;
+  }
+  .iconNeo2 {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+  }
+  .iconNeo2:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/health.png");
+    background-size: contain;
+    position: absolute;
+    left: 1em;
+  }
+  .iconNeo3 {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+  }
+  .iconNeo3:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/doctor.png");
+    background-size: contain;
+    position: absolute;
+    left: 1em;
+  }
+  .controllerFooter ul {
+    background-color: #103f6f;
+  }
+  .controllerFooter a {
+    color: #fff;
+  }
+  .controllerFooter li:nth-child(5) {
+    background: #103f6f;
+  }
+  .controllerFooter li:nth-child(5) a {
+    padding: 10px;
+  }
+  .bottomFooter__topBtn {
+    display: none !important;
+  }
+}
+
+/*固定フッタスマホ外終了*/
+@media (min-width: 600px) {
+  .iconNeo0 {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+  }
+  .iconNeo0:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/about.png");
+    background-size: contain;
+    position: absolute;
+    left: 2em;
+  }
+  .iconNeo1 {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+  }
+  .iconNeo1:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/useful.png");
+    background-size: contain;
+    position: absolute;
+    left: 2em;
+  }
+  .iconNeo2 {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+  }
+  .iconNeo2:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/health.png");
+    background-size: contain;
+    position: absolute;
+    left: 2em;
+  }
+  .iconNeo3 {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+  }
+  .iconNeo3:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/doctor.png");
+    background-size: contain;
+    position: absolute;
+    left: 2em;
+  }
+  .controllerFooter ul {
+    background-color: #103f6f;
+  }
+  .controllerFooter ul a {
+    color: #fff;
+  }
+  .controllerFooter li:nth-child(5) {
+    background: #103f6f;
+  }
+  .controllerFooter li:nth-child(5) a {
+    padding: 10px;
+  }
+  .bottomFooter__topBtn {
+    display: none !important;
+  }
+}
+
+/*固定フッタスマホ外終了*/
+/*h4マーカー黄色*/
+section.content h4 span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(0%, #FFFF00));
+  background: linear-gradient(transparent 70%, #FFFF00 0%);
+}
+
+/*リストドットにする*/
+.content ul li {
+  margin-left: 30px;
+  padding-left: 0;
+  list-style-type: disc !important;
+}
+
+.eyecatch__link:hover img {
+  -webkit-transform: none;
+          transform: none;
+}
+
+/*h2,3,4の太字を一旦挿入したが干渉しないかの検証が必要そうである2021/09/25*/
+.postContents h2 span {
+  font-weight: bold !important;
+}
+
+.postContents h2 span h3 span {
+  font-weight: bold !important;
+}
+
+.postContents h2 span h3 span h4 span {
+  font-weight: bold !important;
+}
+
+/*人気記事一覧のサイドバー装飾*/
+.popularPostList ul li {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popularPostList ul li li img {
+  width: 100%;
+  padding: 1em 0 0 0;
+}
+
+li .popuTitle {
+  padding: 1em 0;
+  border-bottom: 1px solid #103f6f;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/*siteTtilelogo*/
+@media only screen and (min-width: 992px) {
+  .siteTitle__logo {
+    padding-bottom: 5px;
+    padding-top: 15px;
+  }
+}
+
+/*pickUpHead*/
+.pickupHead {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.pickupHead__text {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .pickupHead {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 864px) {
+  .siteTitle__logo {
+    padding-top: 10px;
+    height: 50px !important;
+  }
+  p.siteTitle {
+    height: 60px;
+  }
+}
+
+/*==New CSS Fifth ここから==*/
+.swiper-container {
+  background: url(/wp-content/uploads/2021/08/background01-1.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+/*==New CSS Fifth ここまで==*/
+/*postエリアだけaタグ青*/
+section.content p a {
+  color: #0000ee !important;
+  text-decoration: underline;
+}
+
+/*==New CSS Fourth ここから==*/
+.l-sidebar .widgetSticky {
+  display: none;
+}
+
+figure.wp-block-gallery ul.blocks-gallery-grid {
+  border: none;
+}
+
+/*==New CSS Fourth ここまで==*/
+/*==New CSS Third ここから==*/
+.partsH2-72 h2::after {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .partsH2-72 h2 {
+    padding: 20px 10px;
+    font-size: 1.8rem;
+  }
+}
+
+.content ul > li:before {
+  display: none;
+}
+
+ul#menu-home li {
+  font-size: 1.8rem;
+  border-bottom: 1px solid #F4F7FE;
+}
+
+ul#menu-home lia::before {
+  display: none;
+}
+
+h2 span {
+  font-weight: 450 !important;
+}
+
+#flags {
+  margin: 0 5%;
+}
+
+.goog-te-combo {
+  width: 200px !important;
+  margin: 0 5% !important;
+  font-size: 20px !important;
+}
+
+.categoryBox {
+  background-color: #ffffff;
+}
+
+/*記事中ボックス*/
+.boxMainBody {
+  border: 3px solid #103f6f;
+  padding: 0 1em;
+  margin: 0 3% 0 3%;
+  border-radius: 10px;
+  position: relative;
+  top: 15px;
+}
+
+.boxTitleName {
+  text-align: center;
+  border: 1px solid #103f6f;
+  position: relative;
+  top: -30px;
+  margin-right: 45%;
+  /*タイトルタグ,画面サイズで要調整*/
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #103f6f;
+  border-radius: 10px 10px 0 0;
+  padding: 2px 0;
+}
+
+.boxInnerText {
+  position: relative;
+  top: -28px;
+}
+
+#pageNavi {
+  text-align: center;
+  margin: 5% 0;
+}
+
+#pageNavi.page-numbers.dots {
+  border: none;
+  margin: 0 1em;
+}
+
+.next.page-numbers {
+  padding: 10px 20px;
+}
+
+.next.page-numbers .next.page-numbers::before {
+  display: none !important;
+}
+
+.prev.page-numbers {
+  padding: 10px 20px;
+}
+
+.prev.page-numbers::before {
+  display: none !important;
+}
+
+/*　記事一覧　スマホ1列大画面2列　*/
+/*　均等配置　*/
+.widgetArchive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/*　大画面2列　*/
+/*==置き換え5 ここから==*/
+@media only screen and (min-width: 768px) {
+  li.widgetArchive__item {
+    width: calc(50% - 40px);
+    text-align: center;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 1px 3px 0px #ccc;
+            box-shadow: 0px 1px 3px 0px #ccc;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+  }
+  .heading-secondary a {
+    font-size: 1.2rem;
+  }
+}
+
+/*==置き換え5 ここまで==*/
+/*タイトル下のカテゴリを消す*/
+li.icon-folder {
+  display: none;
+}
+
+/*タブボックスエリア作成--pickUpHeadBottom*/
+#pickUpHeadBottom {
+  padding-top: 50px;
+  background-color: #F4F7FE;
+  width: 100%;
+  height: auto;
+  color: #0F3F6E;
+  padding-bottom: 50px;
+}
+
+/*===New CSSここまで===*/
+/*# sourceMappingURL=style.css.map */

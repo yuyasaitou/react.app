@@ -1,0 +1,45 @@
+/*==スライダーボタン==*/
+.swiper-slide .swiper-content{
+	position:relative;
+	margin-top:-30%;
+	height:90%;
+	width:90%;
+}
+
+.l-headerBottom .swiper-content .btn{
+	background:none !important;
+	height:100%;
+	width:100%;
+a{
+	height:100%;
+	width:100%;
+	background:none !important;
+	border:none;
+	font-size:13px ;
+}
+}
+
+.content{
+	font-size: 0;
+}
+
+@media only screen and (max-width:768px){
+	.swiper-slide .swiper-content{
+	position:relative;
+	width:70%;
+		height:100%;
+		right:50%;
+	transform:translateX(50%);
+}
+}
+
+@media only screen and (min-width:900px){
+	.swiper-slide .swiper-content{
+	margin-top:-10%;
+	position:relative;
+	height:416px;
+	width:886px;
+}
+}
+
+/*==/スライダーボタン==*/

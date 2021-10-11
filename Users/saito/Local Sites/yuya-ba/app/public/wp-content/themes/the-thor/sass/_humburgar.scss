@@ -1,0 +1,16 @@
+/*　PCでハンバーガー非表示　*/
+@media only screen and (min-width: 941px) {
+    .menuBtn__link {
+        display: none;
+        }
+    }
+
+/*　ハンバーガーの色　*/
+.menuBtn__scroll{
+	background-color: #044e83;
+}
+
+.menuBtn__close{
+	color: #fff;
+}
+/*ハンバーガー周り終了*/

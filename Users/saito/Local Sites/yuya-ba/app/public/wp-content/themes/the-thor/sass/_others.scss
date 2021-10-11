@@ -1,0 +1,250 @@
+/*h4マーカー黄色*/
+section.content h4 span{
+	background:linear-gradient(transparent 70%, #FFFF00 0%);
+}
+
+/*リストドットにする*/
+.content ul li{
+	margin-left:30px;
+	padding-left: 0;
+	list-style-type: disc !important;
+}
+
+.eyecatch__link:hover img{
+	transform: none;
+}
+
+/*h2,3,4の太字を一旦挿入したが干渉しないかの検証が必要そうである2021/09/25*/
+.postContents h2 span {
+	font-weight: bold !important;
+ h3 span {
+	font-weight: bold !important;
+h4 span {
+	font-weight: bold !important;
+}
+}
+}
+
+
+/*人気記事一覧のサイドバー装飾*/
+.popularPostList ul li {
+	flex-direction: column;
+	li img {
+ width: 100%;
+ padding: 1em 0 0 0;
+}
+}
+
+li .popuTitle {
+	padding: 1em 0;
+	border-bottom: 1px solid #103f6f;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+/*siteTtilelogo*/
+@media only screen and (min-width: 992px)
+{
+.siteTitle__logo{
+	
+	padding-bottom: 5px;
+	padding-top: 15px;
+}
+}
+
+/*pickUpHead*/
+.pickupHead{
+	box-shadow:none;
+}
+.pickupHead__text{
+	text-align:center;
+}
+
+@media only screen and (max-width:768px){
+	.pickupHead{
+		display:none;
+	}	
+}
+
+
+//*sitetittle
+@media only screen and (max-width: 992px) and (min-width:864px)
+{
+.siteTitle__logo{
+	padding-top: 10px;
+	height:50px !important;
+}
+	p.siteTitle{
+		height:60px;
+	}
+}
+
+
+/*==New CSS Fifth ここから==*/
+.swiper-container{
+	background:url(/wp-content/uploads/2021/08/background01-1.png);
+	background-size: cover;
+	background-position: center center;
+}
+/*==New CSS Fifth ここまで==*/
+/*postエリアだけaタグ青*/
+
+section.content p a{
+	color:#0000ee!important;
+	text-decoration:underline;
+}
+
+/*==New CSS Fourth ここから==*/
+
+.l-sidebar .widgetSticky{
+	display:none;
+}
+figure.wp-block-gallery ul.blocks-gallery-grid{
+	border:none;
+}
+
+
+/*==New CSS Fourth ここまで==*/
+
+/*==New CSS Third ここから==*/
+
+.partsH2-72 h2::after{
+    display:none;
+}
+
+@media only screen and  (max-width:768px){
+.partsH2-72 h2{
+	padding: 20px 10px;
+	font-size: 1.8rem;
+}
+}
+
+.content ul>li:before {
+    display:none;
+}
+
+ul#menu-home li{
+	font-size: 1.8rem;
+	border-bottom: 1px solid #F4F7FE ;
+&a::before{
+	display:none;
+}
+}
+
+//何かわからないやつ
+h2 span{
+	font-weight:450 !important;
+}
+#flags {
+	margin: 0 5% 
+	}
+	
+	.goog-te-combo {
+		width: 200px !important;
+		margin: 0 5% !important;
+		font-size: 20px !important;
+	}
+.categoryBox {
+    background-color: #ffffff;
+}
+
+/*記事中ボックス*/
+
+.boxMainBody {
+    border: 3px solid #103f6f;
+    padding: 0 1em;
+    margin: 0 3% 0 3%;
+    border-radius: 10px;
+			position: relative;
+			top: 15px;
+}
+
+.boxTitleName {
+    text-align: center;
+    border: 1px solid #103f6f;
+
+    position: relative;
+    top: -30px;
+
+    margin-right: 45%;
+			/*タイトルタグ,画面サイズで要調整*/
+
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #103f6f;
+    border-radius: 10px 10px 0 0;
+    padding: 2px 0;
+}
+
+.boxInnerText {
+    position: relative;
+    top: -28px;
+}
+
+#pageNavi {
+	text-align: center;
+	margin: 5% 0;
+&.page-numbers.dots{
+	border: none;
+ margin: 0 1em;
+}
+}
+
+.next.page-numbers {
+	padding: 10px 20px;
+.next.page-numbers::before {
+	display: none !important;
+}
+}
+
+.prev.page-numbers {
+	padding: 10px 20px;
+&::before {
+	display: none !important;
+}
+}
+
+/*　記事一覧　スマホ1列大画面2列　*/
+/*　均等配置　*/
+.widgetArchive {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/*　大画面2列　*/
+/*==置き換え5 ここから==*/
+@media only screen and (min-width: 768px) {
+	li.widgetArchive__item {
+		
+	width:calc(50% - 40px);
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 1px 3px 0px #ccc;
+	margin-right:20px;
+	margin-left:20px;
+	margin-bottom: 40px;
+	padding-bottom:20px;
+	}
+	.heading-secondary a{
+		font-size: 1.2rem;
+	}
+}
+/*==置き換え5 ここまで==*/
+
+
+/*タイトル下のカテゴリを消す*/
+li.icon-folder {
+	display:none;
+  }
+  
+  /*タブボックスエリア作成--pickUpHeadBottom*/
+#pickUpHeadBottom{
+	padding-top:50px;
+	background-color:#F4F7FE;
+	width: 100%;
+	height:auto;
+	color:#0F3F6E;
+	padding-bottom:50px;
+}
+
+/*===New CSSここまで===*/

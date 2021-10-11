@@ -1,0 +1,60 @@
+/*スライドショー*/
+
+
+div.swiper-slide img{
+	margin-top:10px;
+	height: 80%  !important;
+	width:auto  !important;
+	margin-left:50%;
+	transform:translateX(-50%);
+}
+
+@media only screen and (max-width:900px){
+	div.swiper-slide img{
+	height: auto !important;
+	width: 90% !important;
+}
+}
+
+@media only screen and (max-width:768px){
+	div.swiper-slide img{
+	height: 80%  !important;
+	width:auto  !important;
+}
+}
+
+.swiper-pagination-bullet-active{
+	background-color:#FCED4F !important;
+}
+
+.swiper-pagination-bullet{
+	background:#F4F7FE;
+	opacity:1;
+	border:1px solid #0F3F6E !important;
+}
+div.swiper-button-prev{
+	display:none !important;
+}
+
+div.swiper-button-next{
+	display:none !important;
+}
+
+.ViewSp{
+	display:none !important;
+}
+
+.ViewPc{
+	display:block !important;
+}
+
+@media only screen and (max-width: 768px){
+	.ViewSp{
+	display: block !important;
+}
+
+	.ViewPc{
+	display:none !important;
+}
+}
+

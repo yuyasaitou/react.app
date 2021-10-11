@@ -1,0 +1,107 @@
+/*ナビゲーション*/
+
+.global-menu ul{
+	background-color: #ffffff;
+	padding-bottom: 15px;
+	padding-top: 15px;
+ text-align: center; 
+	margin-top: 10px;
+	color:#103f6f;
+}
+
+.global-menu li{
+	width: 100%;
+	margin: 0 10px;
+    display: inline;
+}
+
+.l-header-border{
+	background-color:white;
+}
+
+/*ナビゲーションフォント可変設定ーパソコン表示サイズ*/
+@media only screen and (min-width: 1039px){
+.global-menu ul{
+	font-size: 18px;
+}
+}
+
+/*ナビゲーションデザイン*/
+/*PC用*/
+@media only screen and (min-width: 768px){
+.global-menu {
+	li a:after{
+	content: '|';
+	font-size: 30px;
+	text-decoration: none; 
+	padding-left: 20px;
+	color: #707070;
+}
+ ul:first-child:before{
+	font-family: FontAwesome;
+	content: '|' ;
+	color: #707070;
+	padding-right: 5px;
+	font-size: 30px;
+}
+ li:nth-child(1):before{
+    content: '';
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/about.png");
+			background-repeat: no-repeat;
+    background-size: contain;
+			position: relative;
+			top: 10px;
+			right: 3px;
+}
+ li:nth-child(2):before{
+    content: '';
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/useful.png");
+			background-repeat: no-repeat;
+    background-size: contain;
+			position: relative;
+			top: 10px;
+			right: 3px;
+}
+ li:nth-child(3):before{
+    content: '';
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/health.png");
+			background-repeat: no-repeat;
+    background-size: contain;
+			position: relative;
+			top: 10px;
+			right: 3px;
+}
+li:nth-child(4):before{
+    content: '';
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/doctor.png");
+			background-repeat: no-repeat;
+    background-size: contain;
+			position: relative;
+			top: 10px;
+			right: 3px;
+}
+}
+}
+
+	/*なぜかwidth 768px以下（スマホ,タブレット版）のみ適用されてる*/
+	p{
+		line-height: 2;
+	}
+	
+@media only screen and (max-width: 767px){
+	.global-menu {
+    display: none;
+}
+}

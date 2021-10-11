@@ -1,0 +1,316 @@
+/*　固定フッター(スマホ)　*/
+/*スマホ固定フッタ*/
+@media (max-width: 390px) {
+    .iconNeo0{
+             display: inline-block;
+        height: 2em;
+        line-height: 2em;
+        position: relative;
+        vertical-align: middle;
+        width: 2em;
+    }
+    
+    
+    .iconNeo0:before {
+        content: '';
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url("http://saitou.local/wp-content/uploads/2021/08/about.png");
+        background-size: contain;
+        position: absolute;
+                left: 15px;
+    }
+    
+    .iconNeo1{
+        display: inline-block;
+        height: 2em;
+        line-height: 2em;
+        position: relative;
+        vertical-align: middle;
+        width: 2em;
+    }
+    
+    .iconNeo1:before{
+        content: '';
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url("http://saitou.local/wp-content/uploads/2021/08/useful.png");
+        background-size: contain;
+        position: absolute;
+                left: 15px;
+    }
+    
+    
+    .iconNeo2{
+        display: inline-block;
+        height: 2em;
+        line-height: 2em;
+        position: relative;
+        vertical-align: middle;
+        width: 2em;
+    }
+    
+    .iconNeo2:before {
+        content: '';
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url("http://saitou.local/wp-content/uploads/2021/08/health.png");
+        background-size: contain;
+        position: absolute;
+                left: 15px;
+    }
+    
+    .iconNeo3{
+        display: inline-block;
+        height: 2em;
+        line-height: 2em;
+        position: relative;
+        vertical-align: middle;
+        width: 2em;
+    }
+    
+    .iconNeo3:before {
+        content: '';
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url("http://saitou.local/wp-content/uploads/2021/08/doctor.png");
+        background-size: contain;
+        position: absolute;
+                left: 15px;
+    }
+    
+    .controllerFooter ul{
+        background-color: #103f6f;
+    }
+    
+    .controllerFooter a{
+            color: #fff;
+    }
+    
+    .controllerFooter li:nth-child(5) {
+        background: #103f6f;
+    }
+    
+    .controllerFooter li:nth-child(5) a {
+        padding: 10px
+    }
+    
+    .bottomFooter__topBtn{
+        display:none!important;
+    }
+    }
+    /*　固定フッター(スマホ)　*/
+    /*スマホ固定フッタ終了*/
+    
+    /*固定フッタスマホ外*/
+    @media (min-width: 391px) {
+    .iconNeo0{
+        display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+    }
+    
+    
+    .iconNeo0:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/about.png");
+    background-size: contain;
+    position: absolute;
+    left: 1em;
+    }
+    
+    .iconNeo1{
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+    }
+    
+    .iconNeo1:before{
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/useful.png");
+    background-size: contain;
+    position: absolute;
+           left: 1em;
+    }
+    
+    
+    .iconNeo2{
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+    }
+    
+    .iconNeo2:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/health.png");
+    background-size: contain;
+    position: absolute;
+           left: 1em;
+    }
+    
+    .iconNeo3{
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+    }
+    
+    .iconNeo3:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/doctor.png");
+    background-size: contain;
+    position: absolute;
+           left: 1em;
+    }
+    
+    .controllerFooter ul{
+    background-color: #103f6f;
+    }
+    
+    .controllerFooter a{
+       color: #fff;
+    }
+    
+    .controllerFooter li:nth-child(5) {
+    background: #103f6f;
+    }
+    
+    .controllerFooter li:nth-child(5) a {
+    padding: 10px
+    }
+    
+    .bottomFooter__topBtn{
+    display:none!important;
+    }
+    }
+    /*固定フッタスマホ外終了*/
+    @media (min-width: 600px) {
+    .iconNeo0{
+        display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+    }
+    
+    
+    .iconNeo0:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/about.png");
+    background-size: contain;
+    position: absolute;
+    left: 2em;
+    }
+    
+    .iconNeo1{
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+    }
+    
+    .iconNeo1:before{
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/useful.png");
+    background-size: contain;
+    position: absolute;
+           left: 2em;
+    }
+    
+    
+    .iconNeo2{
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+    }
+    
+    .iconNeo2:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/health.png");
+    background-size: contain;
+    position: absolute;
+           left: 2em;
+    }
+    
+    .iconNeo3{
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+    }
+    
+    .iconNeo3:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("http://saitou.local/wp-content/uploads/2021/08/doctor.png");
+    background-size: contain;
+    position: absolute;
+           left: 2em;
+    }
+    
+.controllerFooter ul{
+    background-color: #103f6f;
+a{
+    color: #fff;
+    }
+}
+    
+.controllerFooter li:nth-child(5) {
+    background: #103f6f;
+a {
+    padding: 10px
+    }
+}
+    
+    .bottomFooter__topBtn{
+    display:none!important;
+    }
+}
+    /*固定フッタスマホ外終了*/
+    

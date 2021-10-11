@@ -1,0 +1,197 @@
+
+/*==タブボックス 用CSS==*/
+.tabContainer00 {
+    margin-top:50px;
+text-align: center;
+}
+
+/*タブ横丸表示*/
+input[name="tabItem00"] {
+display: none;
+}
+
+/*タブ下表示*/
+#tab001:checked ~ #tab001Content,
+#tab002:checked ~ #tab002Content {
+display: block;
+}
+
+.tabItem00 {
+background-color: #f4f7ff;
+border:1px solid  #395168;
+border-radius: 10px 10px 0 0;
+font-weight: bold;
+color: #103f6f;
+position: relative;
+bottom: 16px;
+}
+
+#tab001:checked ~ .tablabelL,
+#tab002:checked ~ .tablabelR{
+background-color: #ffffff;
+}
+
+.tabContent {
+font-weight: bold;
+display: none;
+}
+
+/*タブ上ボーダー前面色*/
+.tabContainer00 input:checked + .tabItem00 {
+border-bottom: 1px solid #ffffff;
+}
+
+/*タブ下パーツ*/
+.tabContent {  
+background-color: white;
+border:1px solid #103f6f;
+}
+
+.tabContent p a{
+display: block;
+width:100%;
+text-decoration: none;
+color: #103f6f;
+
+}
+
+/*--------------------------------pc表示----------------------------------*/
+/*==置き換え2 ここから==*/
+@media (min-width: 768px) {
+
+/*タブ上パーツ*/
+.tabItem00 {
+    padding: 1em 2em;
+}
+
+/*タブ下パーツ*/
+.tabContent {  
+    border-radius: 10px 10px;
+    /*サイズ切り替え(pc2パターンスマホ1パターン)*/
+    margin-left: 15%;
+    margin-right: 15%;
+            padding: 1em 3em 3em;
+}
+
+.tabContentDescription {
+    text-align: center;
+}
+
+
+/*スマホ表示で修正*/
+.tabContent .tabFlex {
+    text-align: left;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.tabContent p {
+    border-bottom: 1px dashed black;
+    width:42%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 5%;
+    text-align: left;
+}
+
+.tabContent p i{
+    display: none;
+}
+
+.tabContent p a{
+    color: #000000;
+}
+}
+/*==置き換え2 ここまで==*/
+
+/*width:750px;以下はスマホ表示で作成*/
+
+/*==置き換え3 ここから==*/
+@media (max-width: 768px) {
+.tabContent{
+    width:90%;
+    margin-left:5%;
+}
+
+/*タブ上パーツ*/
+.tabItem00 {
+padding: 1em 10px;
+font-size: 14px;
+bottom: 15px;
+}
+
+/*タブ下パーツ*/
+.tabContent { 
+padding: 1em 3em 3em;
+border-radius:10px 10px;
+}
+
+.tabContentDescription {
+text-align: left;
+}
+
+/*スマホ表示で修正*/
+.tabContent .tabFlex{
+text-align: left;
+display: flex;
+flex-wrap:wrap;
+}
+
+.tabContent p {
+position: relative;
+font-size: 18px;
+border-bottom:1px solid #103f6f;
+width: 80%;
+margin-left: 10%;
+margin-right: 10%;
+text-align: left;
+    padding-right:25px;
+}
+
+.tabContent p i{
+display: block;
+position:absolute;
+width: 25px;
+    height:25px;
+right:0;
+border-radius: 50%;
+bottom: 5px;
+    padding-top:3px;
+    padding-left:7px;
+color: #ffffff;
+background-color: #0F3F6E;
+}
+.tabContent p a span{
+display: none;
+}
+
+
+.tabContainer00 input:checked + .tabItem00:before {
+content: '';
+position: absolute;
+left: 50%;
+top: 32px;
+width: 9em;/*線の長さ*/
+height: 5px;/*線の太さ*/
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);/*位置調整*/
+background-color: rgb(250, 247, 93);/*線の色*/
+border-radius: 2px;/*線の丸み*/  
+
+}
+
+}
+
+/*==置き換え3 ここから==*/
+
+@media only screen and (max-width: 400px){
+.tabItem00 {
+padding: 1em 10px;
+font-size: 12px;
+bottom: 12px;
+}
+}
+
+
+
+/*==タブボックス 終わり==*/
