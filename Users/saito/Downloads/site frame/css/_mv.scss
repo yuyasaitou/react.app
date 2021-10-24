@@ -1,0 +1,119 @@
+#mv{
+    position: relative;
+    height: calc(100vh - 95px);
+    width: 100%;
+    animation: fadeIn 1s ease 0s 1 normal;
+    @media (max-width: 768px){
+        height: 100%;
+        .container1300{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            z-index: 1;
+            transform: translateX(-50%);
+            @media (max-width: 768px){
+                height:100%;
+        }
+}
+}
+
+
+    h2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        color: #FFF;
+        font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        text-align: center;
+        font-size: 75px;
+        letter-spacing: 0.2em;
+        line-height: 1.8;
+        opacity: 0;
+        transition: opacity 2s ease 0.1s;
+    @media (max-width: 768px){    
+        width: 80%;
+}
+.slider_set{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+}
+
+.contaoner1300{
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 50%;
+z-index: 1;
+transform: translateX(-50%);
+@media (max-width: 768px){
+    height: 100%;
+}
+}
+}
+.contents_inner{
+position: relative;
+height: 100%;
+margin: 0 auto;
+text-align: center;
+box-sizing: border-box;
+@media (max-width: 768px){
+    padding: 0 15px;
+    width: 100%;
+}
+}
+
+#mv h2 .pc p:nth-child(1){
+    width: 671px;
+}
+#mv h2 p{
+margin: 0 auto;
+@media screen and (max-width: 768px){
+    margin-bottom: 20px;
+}
+}
+
+.slick-slider{
+position: relative;
+display: block;
+box-sizing: border-box;
+user-select: none;
+}
+
+.tlbar_set{
+    position:relative;
+    @media screen and (max-width: 768px){
+        display: block;
+}
+>p{
+    position: absolute;
+    color: #e50012;
+    font-size: 12px;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+@media screen and (max-width: 768px){
+    display: none;
+}
+}
+}
+
+.tlbar{
+position: absolute;
+top: -30px;
+right: 0;
+left: 0;
+margin: 0 auto;
+width: 1px;
+height: 60px;
+overflow: hidden;
+background-color: #000;
+}

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <title>frame</title>
+        <meta name="description" content="">
+        <meta name="robots" content="noindex,nofollow">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div id=all_wrapper>
+<!--header-->
+    <div id="black_cover" onclick="menuClose();"></div>
+    <header class="l-header" id="js-header">
+        <div class="header">
+            <div class="header__head contents_inner">
+                <h1 class="logo">
+                    <a href="index.html" class="action_set">
+                        <img src="./img/PC/top/top_daiwahouse_logo.png" alt="DaiwaHousePropMgt">
+                    </a>
+                </h1>
+
+                <div class="head_set">
+                    <h2><a href="index.html" class="action_set"><img src="./img/PC/top/top_daiwahouse_pm.png" alt="head"></a></h2>
+                    <!-- PC Menu -->
+                    <nav class="head-menu u-d-none u-d-md-flex pc" id="js-menu-head-menu">
+                        <ul class="g-nav">
+                            <li class="g-nav__item action_set no_action">
+                                <div class="dropdown">
+                                    <div class="dropdown__trigger">
+                                        <a href="./company.html" class="item"><span>会社概要</span></a>
+                                        <div class="dropdown__area">
+                                            <div class="dropdown__target">
+                                                <ul class="dropdown-menu">
+                                                    <li class="dropdown-menu__item"><a href="/company.html" class="action_set"><span>Vision</span></a></li>
+                                                    <li class="dropdown-menu__item"><a href="./company.html?id=greet_anchor" class="action_set"><span>代表挨拶</span></a></li>
+                                                    <li class="dropdown-menu__item"><a href="./company.html?switch=1&amp;id=company_info_anchor" class="action_set"><span>会社情報</span></a></li>
+                                                    <li class="dropdown-menu__item"><a href="./company.html?switch=1&amp;id=access_anchor" class="action_set"><span>アクセス</span></a></li>
+                                                    <li class="dropdown-menu__item"><a href="./company.html?switch=1&amp;id=organization_anchor" class="action_set"><span>組織図</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="g-nav__item action_set no_action">
+                                <a href="./index.html?id=news_anchor" class="item"><span>お知らせ</span></a>
+                            </li>
+                            <li class="g-nav__item action_set no_action">
+                                <div class="dropdown">
+                                    <div class="dropdown__trigger">
+                                        <a href="./business.html" class="item"><span>事業紹介</span></a>
+                                        <div class="dropdown__area">
+                                            <div class="dropdown__target">
+                                                <ul class="dropdown-menu">
+                                                    <li class="dropdown-menu__item"><a href="./business.html?id=field_anchor" class="action_set"><span>事業領域</span></a></li>
+                                                    <li class="dropdown-menu__item"><a href="./business.html?switch=1&amp;id=business_anchor" class="action_set"><span>事業内容</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="g-nav__item action_set no_action">
+                                <a href="./leasing/index.html" class="item"><span>入居募集中施設</span></a>
+                            </li>
+                            <li class="g-nav__item action_set no_action">
+                                <div class="dropdown">
+                                    <div class="dropdown__trigger">
+                                        <a href="./management.html" class="item"><span>受託施設</span></a>
+                                        <div class="dropdown__area">
+                                            <div class="dropdown__target">
+                                                <ul class="dropdown-menu">
+                                                    <li class="dropdown-menu__item"><a href="./management.html?buildid=001&amp;id=sort_anchor" class="action_set"><span>DPL｜マルチテナント型</span></a></li>
+                                                    <li class="dropdown-menu__item"><a href="./management.html?buildid=002&amp;id=sort_anchor" class="action_set"><span>Dプロジェクト｜専用型</span></a></li>
+                                                    <li class="dropdown-menu__item"><a href="./management.html?buildid=003&amp;id=sort_anchor" class="action_set"><span>医療・介護施設</span></a></li>
+                                                    <li class="dropdown-menu__item"><a href="./management.html?buildid=004&amp;id=sort_anchor" class="action_set"><span>研究施設・オフィス</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="g-nav__item action_set no_action">
+                                <a href="./management.html?id=contact_anchor" class="item"><span>お問い合わせ</span></a>
+                            </li>
+                            <li class="g-nav__item action_set no_action">
+                                <a href="./recruit/" class="item"><span>採用情報</span></a>
+                            </li>
+                        </ul><!-- .g-nav -->
+                    </nav>
+                    <!-- PC Menu ここまで -->
+                </div>
+
+                <p class="r2Header_global">
+                    <a href="https://www.daiwahouse.com/" target="_blank" class="action_set"><img src="./img/PC/top/header_btn_group.png" alt="大和ハウスグループサイト" width="153" height="14"></a>
+                </p>
+
+                <div class="icon_cover">
+                    <div class="contents_outer">
+                        <div class="icon">
+                            <div class="menu_icon">
+                                <a href="JavaScript:void(0);" onclick="menuOpen();" class="icon_btn action_set">
+                                    <img src="./img/SP/menu/menu_button_SP.png" alt="open">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .header__head -->
+
+            <!-- SP Menu -->
+            <div class="menu_cover">
+                <div class="menu">
+                    <div class="contents_outer">
+                        <div class="menu_head">
+                            <!--<p class="logo"><a href="#all_wrapper" class="action_set"><img src="./img/PC/_menu/PC_logo_menu.png" alt="" / class="pc inline"><img src="./img/SP/_menu/SP_logo_menu.png" alt="" / class="sp inline"></a></p>-->
+                            <p class="close"><a href="JavaScript:void(0);" onclick="menuClose();" class="action_set"><img src="./img/SP/menu/menu_close_SP.png" alt="open"></a></p>
+                        </div>
+                        <nav>
+                            <ul class="accordion_once">
+                                <li class="one_menu action_set no_action">
+                                    <div class="accordion">
+                                        <div class="tag">
+                                            <p><span>会社概要</span></p>
+                                            <a href="JavaScript:void(0);">
+                                                <p><img src="./img/SP/menu/menu_syousai_open_SP.png" alt="+"><img src="./img/SP/menu/menu_syousai_close_SP.png" alt="-"></p>
+                                            </a>
+                                        </div>
+                                        <div class="stretch">
+                                            <ul>
+                                                <li class="action_set no_action">
+                                                    <a href="./company.html">
+                                                        <p>Vision</p>
+                                                    </a>
+                                                </li>
+                                                <li class="action_set no_action">
+                                                    <a href="./company.html?id=greet_anchor">
+                                                        <p>代表挨拶</p>
+                                                    </a>
+                                                </li>
+                                                <li class="action_set no_action">
+                                                    <a href="./company.html?switch=1&amp;id=company_info_anchor">
+                                                        <p>会社情報</p>
+                                                    </a>
+                                                </li>
+                                                <li class="action_set no_action">
+                                                    <a href="./company.html?switch=1&amp;id=access_anchor">
+                                                        <p>アクセス</p>
+                                                    </a>
+                                                </li>
+                                                <li class="action_set no_action">
+                                                    <a href="./company.html?switch=1&amp;id=organization_anchor">
+                                                        <p>組織図</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="one_menu action_set">
+                                    <a href="./index.html?id=news_anchor"><span>お知らせ</span></a>
+                                </li>
+                                <li class="one_menu action_set no_action">
+                                    <div class="accordion">
+                                        <div class="tag">
+                                            <p><span>事業紹介</span></p>
+                                            <a href="JavaScript:void(0);">
+                                                <p><img src="./img/SP/menu/menu_syousai_open_SP.png" alt="+"><img src="./img/SP/menu/menu_syousai_close_SP.png" alt="-"></p>
+                                            </a>
+                                        </div>
+                                        <div class="stretch">
+                                            <ul>
+                                                <li class="action_set no_action">
+                                                    <a href="./business.html">
+                                                        <p>事業領域</p>
+                                                    </a>
+                                                </li>
+                                                <li class="action_set no_action">
+                                                    <a href="./business.html?switch=1">
+                                                        <p>事業内容</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="one_menu action_set">
+                                    <a href="./leasing/index.html" class="item"><span>入居募集中施設</span></a>
+                                </li>
+                                <li class="one_menu action_set no_action">
+                                    <div class="accordion">
+                                        <div class="tag">
+                                            <p><span>受託施設</span></p>
+                                            <a href="JavaScript:void(0);">
+                                                <p><img src="./img/SP/menu/menu_syousai_open_SP.png" alt="+"><img src="./img/SP/menu/menu_syousai_close_SP.png" alt="-"></p>
+                                            </a>
+                                        </div>
+                                        <div class="stretch">
+                                            <ul>
+                                                <li class="action_set no_action">
+                                                    <a href="./management.html">
+                                                        <p>受託施設</p>
+                                                    </a>
+                                                </li>
+                                                <li class="action_set no_action">
+                                                    <a href="./management.html?buildid=001&amp;id=sort_anchor">
+                                                        <p>DPL｜マルチテナント型</p>
+                                                    </a>
+                                                </li>
+                                                <li class="action_set no_action">
+                                                    <a href="./management.html?buildid=002&amp;id=sort_anchor">
+                                                        <p>Dプロジェクト｜専用型</p>
+                                                    </a>
+                                                </li>
+                                                <li class="action_set no_action">
+                                                    <a href="./management.html?buildid=003&amp;id=sort_anchor">
+                                                        <p>医療・介護施設</p>
+                                                    </a>
+                                                </li>
+                                                <li class="action_set no_action">
+                                                    <a href="./management.html?buildid=004&amp;id=sort_anchor">
+                                                        <p>研究施設・オフィス</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="one_menu action_set">
+                                    <a href="./management.html?id=contact_anchor"><span>お問い合わせ</span></a>
+                                </li>
+                                <li class="one_menu action_set">
+                                    <a href="./recruit/"><span>採用情報</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- SP Menu ここまで -->
+        </div>
+    </header>
+<!-- .header -->
+<div class="header_spacer"></div>
+<!--main-->
+<main class="top">
+    <!--mv-->
+    <section id="mv" class="top_mv" style="height: 630px;">
+        <div class="container1300">
+            <div class="contents_inner">
+                <h2 class="on" style="transition: opacity 2s ease 1s;">
+                    <div class="pc">
+                        <p><img src="./img/PC/top/top_text.png" alt=""></p>
+                        <p><img src="./img/PC/top/top_co_ltd.png" alt=""></p>
+                    </div>
+                    <div class="sp">
+                        <p><img src="./img/SP/top/top_text_SP.png" alt=""></p>
+                        <p><img src="./img/SP/top/top_co_ltd_SP.png" alt=""></p>
+                    </div>
+                </h2>
+            </div>
+        </div>
+        <div class="slider_set">
+            <img src="./img/b.png" alt="pan" style="height: 630px;"> 
+        </div>
+        <div class="tlbar_set">
+            <p class="ym_font">SCROLL</p>
+            <div class="tlbar">
+                <div class="tlbar-in is-animate"></div>
+            </div>
+        </div>
+        
+    
+    </section>
+<!--/mv-->
+<!--news-->
+<div id="news_anchor" class="section_anchor">
+    <div class="parallax_cover">
+        <div class="parallax_act_area"></div>
+        <div class="parallax_set_area"></div>
+        <div class="bg_area parallax slideupin">
+            <section id="news" class="news">
+                <div class="contents_inner">
+                    <div class="title_set parallax slideupin">
+                        <h2 class="cg_font">News</h2>
+                        <p>お知らせ</p>
+                    </div>
+                    <ul class="news_set parallax slideupin">
+                        <li>
+                            <p class="date">2021.05.11</p>
+                            <p class="tag">最新情報</p>
+                            <p class="message">「入居募集中施設」を追加しました。</p>
+                        </li>
+                        <li>
+                            <p class="date">2021.03.01</p>
+                            <p class="tag">最新情報</p>
+                            <p class="message">「採用情報」ページを設置しました。</p>
+                        </li>
+                        <li>
+                            <p class="date">2020.10.01</p>
+                            <p class="tag">最新情報</p>
+                            <p class="message">ホームページをリニューアルしました。</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</div>
+<!--guide-->
+<div id="guide_anchor" class="section_anchor">
+    <div class="parallax_cover">
+        <div class="parallax_act_area"></div>
+        <div class="parallax_set_area"></div>
+        <section id="guide" class="guide">
+            <div class="tile_set_wrapper">
+                <ul class="tile_set iphone_counterplan">
+                    <li class="parallax fadein off">
+                        <a href="./company.html" class="action_set no_action type_red">
+                            <div class="back cursor_fade">
+                                <p>
+                                    <img class="pc inline" src="./img/b.png" alt="">
+                                    <img class="sp inline" src="./img/b.png" alt="">
+                                </p>
+                            </div>
+                            <div class="front">
+                                <div class="logo cursor_fade">
+                                    <p>
+                                        <img class="pc inline" src="./img/b.png" alt="">
+                                        <img class="sp inline" src="./img/b.png" alt="">
+                                    </p>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="button_area">
+                                <div class="btn type_fade">
+                                    <p>More</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="parallax fadein off">
+                        <a href="./company.html?id=greet_anchor" class="action_set no_action type_green">
+                            <div class="back cursor_fade">
+                                <p>
+                                    <img class="pc inline" src="./img/b.png" alt="">
+                                    <img class="sp inline" src="./img/b.png" alt="">
+                                </p>
+                            </div>
+                            <div class="front">
+                                <div class="logo cursor_fade">
+                                    <p>
+                                        <img class="pc inline" src="./img/b.png" alt="">
+                                        <img class="sp inline" src="./img/b.png" alt="">
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="button_area">
+                                <div class="btn type_fade">
+                                    <p>More</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="parallax fadein off">
+                        <a href="./company.html?switch=1&amp;id=company_info_anchor" class="action_set no_action type_brown">
+                            <div class="back cursor_fade">
+                                <p>
+                                    <img class="pc inline" src="./img/b.png" alt="">
+                                    <img class="sp inline" src="./img/b.png" alt="">
+                                </p>
+                                <p>
+                                    <img class="pc inline" src="./img/b.png" alt="">
+                                    <img class="sp inline" src="./img/b.png" alt="">
+                                </p>
+                            </div>
+                            <div class="front">
+                                <div class="logo cursor_fade">
+                                    <p>
+                                        <img class="pc inline" src="./img/PC/top/top_company_text_off.png" alt="">
+                                        <img class="sp inline" src="./img/SP/top/top_company_text_off_SP.png" alt="">
+                                    </p>
+                                    <p>
+                                        <img class="pc inline" src="./img/PC/top/top_company_text_on.png" alt="">
+                                        <img class="sp inline" src="./img/SP/top/top_company_text_on_SP.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="button_area">
+                                <div class="btn type_fade">
+                                    <p>More</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="parallax fadein off">
+                        <a href="./business.html" class="action_set no_action type_purple">
+                            <div class="back cursor_fade">
+                                <p>
+                                    <img class="pc inline" src="./img/b.png" alt="">
+                                    <img class="sp inline" src="./img/b.png" alt="">
+                                </p>
+                                <p>
+                                    <img class="pc inline" src="./img/b.png" alt="">
+                                    <img class="sp inline" src="./img/b.png" alt="">
+                                </p>
+                            </div>
+                            <div class="front">
+                                <div class="logo cursor_fade">
+                                    <p>
+                                        <img class="pc inline" src="./img/PC/top/top_field_text_off.png" alt="">
+                                        <img class="sp inline" src="./img/SP/top/top_field_text_off_SP.png" alt="">
+                                    </p>
+                                    <p>
+                                        <img class="pc inline" src="./img/PC/top/top_field_text_on.png" alt="">
+                                        <img class="sp inline" src="./img/SP/top/top_field_text_on_SP.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="button_area">
+                                <div class="btn type_fade">
+                                    <p>More</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="parallax fadein off">
+                        <a href="./business.html?switch=1" class="action_set no_action type_cobalt">
+                            <div class="back cursor_fade">
+                                <p>
+                                    <img class="pc inline" src="./img/b.png" alt="">
+                                    <img class="sp inline" src="./img/b.png" alt="">
+                                </p>
+                            </div>
+                            <div class="front">
+                                <div class="logo cursor_fade">
+                                    <p>
+                                        <img class="pc inline" src="./img/PC/top/top_descriptionofbusiness_text_off.png" alt="">
+                                        <img class="sp inline" src="./img/SP/top/top_descriptionofbusiness_text_off_SP.png" alt="">
+                                    </p>
+                                    <p>
+                                        <img class="pc inline" src="./img/PC/top/top_descriptionofbusiness_text_on.png" alt="">
+                                        <img class="sp inline" src="./img/SP/top/top_descriptionofbusiness_text_on_SP.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="button_area">
+                                <div class="btn type_fade">
+                                    <p>More</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="parallax fadein off">
+                        <a href="./management.html" class="action_set no_action type_blue">
+                            <div class="back cursor_fade">
+                                <p>
+                                    <img class="pc inline" src="./img/b.png" alt="">
+                                    <img class="sp inline" src="./img/b.png" alt="">
+                                </p>
+                                <p>
+                                    <img class="pc inline" src="./img/PC/top/top_management_img_on." alt="">
+                                    <img class="sp inline" src="./img/SP/top/top_management_img_on_SP." alt="">
+                                </p>
+                            </div>
+                            <div class="front">
+                                <div class="logo cursor_fade">
+                                    <p>
+                                        <img class="pc inline" src="./img/PC/top/top_management_text_off.png" alt="">
+                                        <img class="sp inline" src="./img/SP/top/top_management_text_off_SP.png" alt="">
+                                    </p>
+                                    <p>
+                                        <img class="pc inline" src="./img/PC/top/top_management_text_on.png" alt="">
+                                        <img class="sp inline" src="./img/SP/top/top_management_text_on_SP.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="button_area">
+                                <div class="btn type_fade">
+                                    <p>More</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+<!--leasing-->
+<div id="leasing_anchor" class="section_anchor">
+    <div class="parallax_cover">
+        <div class="parallax_act_area"></div>
+        <div class="parallax_set_area"></div>
+        <div class="kv_wrapper">
+            <section class="recruit">
+                <a href="./leasing/index.html" class="action_set no_action">
+                    <div class="back cursor_fade">
+                        <p>
+                            <img class="pc inline" src="./img/b.png" alt="">
+                            <img class="sp inline" src="./img/b.png" alt="">
+
+                        </p>
+                    </div>
+                    <div class="front">
+                        <div class="index_set">
+                            <h2 class="cg_font">Tenant-leasing</h2>
+                            <p>入居募集中施設</p>
+                        </div>
+                    </div>
+                    <div class="banner_area pc">
+                        <div class="banner_button">
+                            <p>入居施設をお探しのお客様はこちら</p>
+                        </div>
+                    </div>
+                </a>
+            </section>
+        </div>
+    </div>
+</div>
+<!--recruit-->
+<div id="recruit_anchor" class="section_anchor">
+    <div class="parallax_cover">
+        <div class="parallax_act_area"></div>
+        <div class="parallax_set_area"></div>
+        <div class="kv_wrapper">
+            <section id="kv" class="recruit">
+                <a href="./recruit/" class="action_set no_action type_blue">
+                    <div class="back cursor_fade">
+                        <p>
+                            <img class="pc inline" src="./img/b.png" alt="">
+                            <img class="sp inline" src="./img/b.png" alt="">
+                        </p>
+                    </div>
+                    <div class="front">
+                        <div class="index_set">
+                            <h2 class="cg_font">Recruit</h2>
+                            <p>採用情報</p>
+                            <div class="button_area">
+                                <div class="btn type_fade">
+                                    <p>More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </section>
+        </div>
+    </div>
+</div>
+</main>
+
+<footer>
+    <div class="sub_part">
+        <div class="contents_inner">
+            <div class="info_wrapper pc">
+                <div class="company_area">
+                    <p>大和ハウスグループ</p>
+                    <p>Business領域</p>
+                </div>
+                <div class="business_area">
+                    <p>大和ハウス工業（ <a href="https://www.daiwahouse.co.jp/business/" target="_blank" class="action_set u_line">施設建築</a>　<a href="https://www.daiwahouse.co.jp/business/index2.html" target="_blank" class="action_set u_line">店舗出店</a>　<a href="https://www.daiwahouse.co.jp/ene/" target="_blank" class="action_set u_line">環境エネルギー</a> ）</p>
+                    <p>大和リース（ <a href="http://www.daiwalease.co.jp/service/prefab/" target="_blank" class="action_set u_line">プレハブ建築</a>　<a href="http://www.daiwalease.co.jp/service/ecologreen/" target="_blank" class="action_set u_line">緑化</a>　<a href="http://www.daiwalease.co.jp/service/automobile/carlease/" target="_blank" class="action_set u_line">カーリース</a> ）</p><br class="pc inline">
+                    <p>大和物流 （ <a href="https://www.daiwabutsuryu.co.jp/" target="_blank" class="action_set u_line">物流</a> ）</p>
+                    <p>フレームワークス（ <a href="https://www.frame-wx.com/" target="_blank" class="action_set u_line">ロジスティクス</a> ）</p>
+                    <p>大和情報サービス（ <a href="https://www.daiwainfo.jp/service/management/" target="_blank" class="action_set u_line">プロパティマネジメント</a>　<a href="https://www.daiwainfo.jp/manage/" target="_blank" class="action_set u_line">商業施設運営</a>　<a href="https://www.daiwainfo.jp/service/solutions/" target="_blank" class="action_set u_line">不動産賃貸</a> ）</p>
+                    <p>ダイワロイヤル（ <a href="http://www.daiwaroyal.com/real_estate/" target="_blank" class="action_set u_line">不動産活用</a>　<a href="https://www.daiwaroynet.jp/" target="_blank" class="action_set u_line">ビジネスホテル</a> ）</p>
+                    <p>大和エネルギー（ <a href="https://www.daiwa-energy.com/energy/index.html" target="_blank" class="action_set u_line">再生可能エネルギー</a>　<a href="https://www.daiwa-energy.com/business/economy/index.html" target="_blank" class="action_set u_line">省エネルギー</a> ）</p>
+                    <p>エネサーブ（ <a href="https://www.eneserve.co.jp/security01.html" target="_blank" class="action_set u_line">電気設備保守点検</a>　<a href="https://www.eneserve.co.jp/kouri01.html" target="_blank" class="action_set u_line">電力小売り</a> ）</p>
+                    <p>大和ハウス・アセットマネジメント （ <a href="https://www.dh-am.com/" target="_blank" class="action_set u_line">資産運用</a> ）</p><br class="pc inline">
+                    <p>大和ハウス不動産投資顧問（ <a href="https://www.dh-reim.co.jp/" target="_blank" class="action_set u_line">資産運用</a> ）</p>
+                    <p>伸和エージェンシー（ <a href="https://www.shinwa-agency.co.jp/" target="_blank" class="action_set u_line">広告代理店</a>　<a href="http://www.royaltour.jp/" target="_blank" class="action_set u_line">旅行</a> ）</p>
+                    <p>メディアテック （ <a href="https://www.mediatech.jp/" target="_blank" class="action_set u_line">システム開発</a> ）</p><br class="pc inline">
+                    <p>フジタ（ <a href="https://www.fujita.co.jp/" target="_blank" class="action_set u_line">総合建設</a> ）</p>
+                    <p>大和ハウスパーキング（ <a href="https://www.dh-parking.co.jp/parking/" target="_blank" class="action_set u_line">駐車場事業</a> ）</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion_wrapper sp">
+            <div class="accordion">
+                <div class="tag">
+                    <p><span>大和ハウスグループBusiness領域</span></p>
+                    <a href="JavaScript:void(0);">
+                        <p><img src="./img/SP/top/top_businessryoiki_open_SP.png" alt="+"><img src="./img/SP/top/top_businessryoiki_close_SP.png" alt="-"></p>
+                    </a>
+                </div>
+                <div class="stretch">
+                    <div class="one_set">
+                        <p>大和ハウス工業</p>
+                        <ul>
+                            <li class="action_set no_action"><a href="https://www.daiwahouse.co.jp/business/" target="_blank">
+                                    <p>施設建築</p>
+                                </a></li>
+                            <li class="action_set no_action"><a href="https://www.daiwahouse.co.jp/business/index2.html" target="_blank">
+                                    <p>店舗出店</p>
+                                </a></li>
+                            <li class="action_set no_action"><a href="https://www.daiwahouse.co.jp/ene/" target="_blank">
+                                    <p>環境エネルギー</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="one_set">
+                        <p>大和リース</p>
+                        <ul>
+                            <li class="action_set no_action"><a href="http://www.daiwalease.co.jp/service/prefab/" target="_blank">
+                                    <p>プレハブ建築</p>
+                                </a></li>
+                            <li class="action_set no_action"><a href="http://www.daiwalease.co.jp/service/ecologreen/" target="_blank">
+                                    <p>緑化</p>
+                                </a></li>
+                            <li class="action_set no_action"><a href="http://www.daiwalease.co.jp/service/automobile/carlease/" target="_blank">
+                                    <p>カーリース</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="one_set">
+                        <p>大和物流</p>
+                        <ul>
+                            <li class="action_set no_action"><a href="https://www.daiwabutsuryu.co.jp/" target="_blank">
+                                    <p>物流</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="one_set">
+                        <p>フレームワークス</p>
+                        <ul>
+                            <li class="action_set no_action"><a href="https://www.frame-wx.com/" target="_blank">
+                                    <p>ロジスティクス</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="one_set">
+                        <p>大和情報サービス</p>
+                        <ul>
+                            <li class="action_set no_action"><a href="https://www.daiwainfo.jp/service/management/" target="_blank">
+                                    <p>プロパティマネジメント</p>
+                                </a></li>
+                            <li class="action_set no_action"><a href="https://www.daiwainfo.jp/manage/" target="_blank">
+                                    <p>商業施設運営</p>
+                                </a></li>
+                            <li class="action_set no_action"><a href="https://www.daiwainfo.jp/service/solutions/" target="_blank">
+                                    <p>不動産賃貸</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="one_set">
+                        <p>ダイワロイヤル</p>
+                        <ul>
+                            <li class="action_set no_action"><a href="http://www.daiwaroyal.com/real_estate/" target="_blank">
+                                    <p>不動産活用</p>
+                                </a></li>
+                            <li class="action_set no_action"><a href="https://www.daiwaroynet.jp/" target="_blank">
+                                    <p>ビジネスホテル</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="one_set">
+                        <p>大和エネルギー</p>
+                        <ul>
+                            <li class="action_set no_action"><a href="https://www.daiwa-energy.com/energy/index.html" target="_blank">
+                                    <p>再生可能エネルギー</p>
+                                </a></li>
+                            <li class="action_set no_action"><a href="https://www.daiwa-energy.com/business/economy/index.html" target="_blank">
+                                    <p>省エネルギー</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="one_set">
+                        <p>エネサーブ</p>
+                        <ul>
+                            <li class="action_set no_action"><a href="https://www.eneserve.co.jp/security01.html" target="_blank">
+                                    <p>電気設備保守点検</p>
+                                </a></li>
+                            <li class="action_set no_action"><a href="https://www.eneserve.co.jp/kouri01.html" target="_blank">
+                                    <p>電力小売り</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="one_set">
+                        <p>大和ハウス・アセットマネジメント</p>
+                        <ul>
+                            <li class="action_set no_action"><a href="https://www.dh-am.com/" target="_blank">
+                                    <p>資産運用</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="one_set">
+                        <p>大和ハウス不動産投資顧問</p>
+                        <ul>
+                            <li class="action_set no_action"><a href="https://www.dh-reim.co.jp/" target="_blank">
+                                    <p>資産運用</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="one_set">
+                        <p>伸和エージェンシー</p>
+                        <ul>
+                            <li class="action_set no_action"><a href="https://www.shinwa-agency.co.jp/" target="_blank">
+                                    <p>広告代理店</p>
+                                </a></li>
+                            <li class="action_set no_action"><a href="http://www.royaltour.jp/" target="_blank">
+                                    <p>旅行</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="one_set">
+                        <p>メディアテック</p>
+                        <ul>
+                            <li class="action_set no_action"><a href="https://www.mediatech.jp/" target="_blank">
+                                    <p>システム開発</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="one_set">
+                        <p>フジタ</p>
+                        <ul>
+                            <li class="action_set no_action"><a href="https://www.fujita.co.jp/" target="_blank">
+                                    <p>総合建設</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="one_set">
+                        <p>大和ハウスパーキング</p>
+                        <ul>
+                            <li class="action_set no_action"><a href="https://www.dh-parking.co.jp/parking/" target="_blank">
+                                    <p>駐車場事業</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_part">
+        <div class="top_wrapper">
+            <div class="contents_inner">
+                <ul>
+                    <li>
+                        <div class="pc inline"><a href="index.html" class="action_set u_line">大和ハウスプロパティマネジメント トップ</a></div>
+                        <div class="sp inline"><a href="index.html" class="action_set u_line">トップ</a></div>
+                    </li>
+                    <li><a href="./company.html" class="action_set u_line">会社概要</a></li>
+                    <li><a href="./index.html?id=news_anchor" class="action_set u_line">お知らせ</a></li>
+                    <li><a href="./business.html" class="action_set u_line">事業紹介</a></li>
+                    <li><a href="./leasing/index.html" class="action_set u_line">入居募集中施設</a></li>
+                    <li><a href="./management.html" class="action_set u_line">受託施設</a></li>
+                    <li><a href="./management.html?id=contact_anchor" class="action_set u_line">お問い合わせ</a></li>
+                    <li><a href="./recruit/" class="action_set u_line"><span>採用情報</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom_wrapper">
+            <div class="contents_inner">
+                <ul>
+                    <li><a href="https://www.daiwahouse.com/" class="action_set u_line" target="_blank">大和ハウスグループ</a></li>
+                    <li><a href="./terms.html" class="action_set u_line">サイトのご利用について</a></li>
+                    <li><a href="./privacy_policy.html" class="action_set u_line">個人情報保護方針</a></li>
+                </ul>
+                <!-- 202007/27 修正指示により撤去。一旦コメントアウト -->
+                <!--
+                <p class="footer_global sp">
+                    <a href="https://www.daiwahouse.com/" target="_blank" class="action_set"><img src="./img/SP/top/top_daiwahousegroupesite_SP.png" alt="大和ハウスグループサイト" width="153" height="14"></a>
+                </p>
+                -->
+                <!-- 202007/27 修正指示により撤去　ここまで -->
+                <div class="copyright">
+                    <p>大和ハウスプロパティマネジメント株式会社</p>
+                    <p>Copyright Daiwa House Property Mgt. CO.,LTD All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+
+
+</body>
+</html>

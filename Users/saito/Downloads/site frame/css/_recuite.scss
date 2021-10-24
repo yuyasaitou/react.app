@@ -1,0 +1,142 @@
+#kv{
+    position: relative;
+    min-width: 1000px;
+    overflow: hidden;
+    @media screen and (max-width: 768px){
+        min-width: auto;
+    }
+        @media screen and (max-width: 1300px){
+        padding-top: 376.5px;
+    }  
+    .front{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 768px){
+            width: calc(100% - 30px);
+            padding-top: 60%;
+            align-items: flex-start;
+        }
+    } 
+}
+
+#recruit_anchor #kv .back{
+@media screen and (max-width: 768px){
+width: 100%;
+height: 146px;
+position: relative;
+}
+
+
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 768px){
+        width: auto;
+    }
+}
+}
+
+#recruit_anchor .front{
+    z-index: 2;
+}
+#recruit_anchor #kv .front{
+@media screen and (max-width: 477px) {
+    padding-top: 60px;
+}
+}
+
+#recruit_anchor #kv .front {
+    @media screen and (max-width: 768px){
+    padding-top: 15vw;
+}
+}
+
+#recruit_anchor .index_set h2 {
+    border-color: #A4DDF2;
+    @media screen and (max-width: 477px){
+        margin-bottom: 3px;
+        padding-bottom: 3px;
+        font-size: 20px;
+        border-bottom-width: 1px;
+    }
+}
+
+#recruit_anchor .btn {
+    width: 330px;
+    margin-top: 70px;
+    @media screen and (max-width: 768px){
+        width: 100px;
+        margin-top: 25px;
+        padding: 0;
+        border: none;
+    }
+    .type_fade:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 13px;
+        height: 22px;
+        top: 50%;
+        right: 32px;
+        transform: translateY(-50%);
+        background: url("../img/PC/top/top_button_off.png") center / contain no-repeat;
+        @media screen and (max-width: 768px){
+        width: 6px;
+        height: 12px;
+        right: 32px;
+    }
+}
+}
+@media screen and (max-width: 768px){
+#recruit_anchor .btn:before, #recruit_anchor .btn:after {
+    right: 20px;
+}
+}
+.btn p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    @media screen and (max-width: 768px){
+        font-size: 10px;
+    }
+}
+.index_set p {
+    color: #fff;
+    white-space: nowrap;
+    font-size: 20px;
+    @media screen and (max-width: 768px){
+        font-size: 13px;
+    }
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 22px;
+    top: 50%;
+    right: 32px;
+    transform: translateY(-50%);
+    background: url("../img/PC/top/top_button_off.png") center / contain no-repeat;
+    @media screen and (max-width: 768px){
+        width: 6px;
+        height: 12px;
+        right: 32px;
+    }
+}
+
+#kv{
+    @media screen and (max-width: 768px){
+    padding-top: 0;
+    }
+}
+
+
